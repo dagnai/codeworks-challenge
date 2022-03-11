@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- linking styles.css below -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+<!-- linking jquery below -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Book</title>
+</head>
+<body>
+    <header class="hidden">Address Book</header>
+
+    <hr>
+
+    <form id="new-contact" method="GET">
+
+        <label for="name-el">Name</label>
+        <input autofocus type="text" id="name-el" name="name-el" placeholder="Name">
+
+        <label for="surname-el">Surname</label>
+        <input type="text" id="surname-el" name="surname-el" placeholder="Surname">
+
+        <label for="phone-el">Phone</label>
+        <input type="text" id="phone-el" name="phone-el" placeholder="Phone">
+
+        <label for="address-el">Address</label>
+        <input type="text" id="address-el" name="address-el" placeholder="Address">
+
+        <!--button-->
+        <label for="create-btn"></label>
+        <button id="create-btn" type="submit">Submit</button>
+
+    </form>
+
+
+
+    <section id="table-search-and-delete">
+
+        <h1 class="hidden">Entries</h1>
+
+        <hr>
+
+	<label for="search">Search entries:
+		<input id="searchValue" type="text" minlength="1" onkeyup="myFunction()" placeholder="Search for the first names...">
+	</label>
+
+
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="table-content"></tbody>
+
+    </table>
+
+
+
+    </section>
+
+</body>
+
+    <script src="scripts.js"></script>
+
+</html>
