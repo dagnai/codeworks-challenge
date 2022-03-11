@@ -1,0 +1,99 @@
+body {
+    margin: 0px;
+    padding: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 250, 238);
+    min-width: 700px;
+}
+
+header, footer {
+    font-size: 30px;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+}
+
+hr {
+    border-radius: 5px;
+    background-color: azure;
+   
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: lighter;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
+
+#new-contact {
+    display: flex;
+    flex-direction:column;
+}
+
+input {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 200px;
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: rgb(210, 239, 240);
+    border-radius: 1em;
+    border: solid rgb(167, 239, 241);
+}
+
+button {
+    padding: 10px 10px;
+    border: rgb(235, 180, 144) solid;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction:column;
+    margin: 10px;
+}
+
+#create-btn {
+    width: 140px;
+    background: rgb(85, 192, 85);
+    color: white;
+    text-align: center;
+    margin: 30px;
+    display: grid;
+
+    
+}
+
+#table {
+    background: rgb(166, 227, 255);
+    margin-top: 20px;
+    border: solid rgb(167, 239, 241);
+    background-color: rgb(210, 239, 240);
+    border-radius: 2em;
+    text-align: center;
+    min-width: 450px;;
+}
+
+th, td {
+    border: none;
+    border-radius: 0.1em;
+    padding: 4px;
+}
+
+
+.button-one:hover {
+    color: red;
+}
+  
+.button-one:active {
+    text-shadow: 2px 2px 8px #FF0000;    
+}
+
+.hidden {
+    display: none;
+}
